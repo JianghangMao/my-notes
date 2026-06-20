@@ -1,6 +1,6 @@
 site_name: JianghangMao 的笔记本
 site_description: 个人学习笔记
-# site_url 等推送到 GitHub 后再填，例如 https://你的用户名.github.io/my-notes/
+site_url: https://JianghangMao.github.io/my-notes/
 
 theme:
   name: material
