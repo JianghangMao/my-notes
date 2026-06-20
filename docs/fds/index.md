@@ -31,3 +31,6 @@ int binary_search(int a[], int n, int target) {
 
 !!! tip "提示框"
     用 `!!! tip` / `!!! warning` / `!!! note` 可以做出这种彩色提示框。
+
+！！！ warning
+    这很重要
