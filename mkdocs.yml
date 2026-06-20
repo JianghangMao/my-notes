@@ -1,0 +1,48 @@
+site_name: JianghangMao 的笔记本
+site_description: 个人学习笔记
+# site_url 等推送到 GitHub 后再填，例如 https://你的用户名.github.io/my-notes/
+
+theme:
+  name: material
+  language: zh
+  palette:
+    # 亮色 / 暗色两套，右上角可切换
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到亮色
+  features:
+    - navigation.instant   # 页面切换不刷新，更快
+    - navigation.tracking  # 地址栏跟随章节
+    - navigation.top       # 回到顶部按钮
+    - search.suggest       # 搜索建议
+    - content.code.copy    # 代码块右上角一键复制
+
+# 左侧菜单（栏目结构）。改这里就能调整网站目录
+nav:
+  - 首页: index.md
+  - 数据结构(FDS):
+      - fds/index.md
+  - 数字逻辑:
+      - digital-logic/index.md
+
+markdown_extensions:
+  - admonition            # 提示框 !!! note
+  - pymdownx.details
+  - pymdownx.superfences  # 更强的代码块
+  - pymdownx.highlight    # 代码高亮
+  - pymdownx.arithmatex:  # 数学公式
+      generic: true
+  - toc:
+      permalink: true     # 每个标题旁边加锚点链接
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
