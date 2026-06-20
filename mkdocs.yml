@@ -8,12 +8,12 @@ theme:
   palette:
     # 亮色 / 暗色两套，右上角可切换
     - scheme: default
-      primary: indigo
+      primary: pink
       toggle:
         icon: material/weather-night
         name: 切换到暗色
     - scheme: slate
-      primary: indigo
+      primary: deep purple
       toggle:
         icon: material/weather-sunny
         name: 切换到亮色
